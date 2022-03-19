@@ -1,15 +1,15 @@
 <template>
-  <hello-world />
+  <app-fake />
 </template>
 
 <script>
-  import HelloWorld from '../components/HelloWorld'
+import AppFake from '@/components/AppFake.vue'
+
 
   export default {
-    name: 'HomeView',
+  components: { AppFake },
+    name: 'paginaNoticias',
 
-    components: {
-      HelloWorld,
-    },
+    
   }
 </script>
