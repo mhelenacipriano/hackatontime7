@@ -12,12 +12,21 @@
 </template>
 
 <script>
-
-
-
-  export default {
-    name: 'paginaNoticias',
-
-    
+export default {
+  name: 'NewsLista',
+  data() {
+      return {
+        newsLlista: [
+        ]
+      }
+    },
+    created() {
+      fetch('https://it3-hbn-default-rtdb.firebaseio.com/fakeNews.json')
+          .then(resposta => resposta.json())
+          .then(json => {
+            this.newsLlista = json;
+            console.log(this.newsLlista);
+          });
+    }
   }
 </script>
