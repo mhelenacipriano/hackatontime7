@@ -5,7 +5,7 @@
 
 <script>
 export default {
-  name: 'denuncias'
+  name: 'paginaDenuncias'
 }
 </script>
 

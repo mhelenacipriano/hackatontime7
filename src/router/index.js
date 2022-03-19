@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import VueRouter from 'vue-router'
 import meuInicio from '../views/meuInicio.vue'
 import paginaDenuncias from '../views/paginaDenuncias.vue'
 import paginaNoticias from '../views/paginaNoticias.vue'
