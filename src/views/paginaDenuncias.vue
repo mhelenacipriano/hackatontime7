@@ -1,6 +1,6 @@
 <template>
   <v-container class="home">
-    <h2 class="text-h5 text-left mb-3 mt-5">
+    <h2 class="text-h6 text-left mb-3 mt-5">
       Recebeu alguma notícia falsa? Denuncie!
     </h2>
 
