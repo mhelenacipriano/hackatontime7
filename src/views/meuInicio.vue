@@ -19,11 +19,11 @@
       <h4 class="h4-decor">
         Se você quer se informar, separamos alguns sites confiáveis para você:
       </h4>
-      <ul> 
-          <li><a href="https://g1.globo.com/">G1</a></li>
-          <li><a href="https://www.cnnbrasil.com.br/">CNN</a></li>
-          <li><a href="https://www.folha.uol.com.br/">Folha de São Paulo</a></li>
-          <li><a href="https://veja.abril.com.br/">Veja</a></li>
+      <ul>
+        <li><a href="https://g1.globo.com/" target=_blank>G1</a></li>
+        <li><a href="https://www.cnnbrasil.com.br/" target=_blank>CNN</a></li>
+        <li><a href="https://www.folha.uol.com.br/" target=_blank>Folha de São Paulo</a></li>
+        <li><a href="https://veja.abril.com.br/" target=_blank>Veja</a></li>
       </ul>
     </v-container>
   </div>
@@ -41,5 +41,14 @@ export default {
 }
 .h4-decor {
   color: #f57c00;
+}
+a:link {
+  color: f57c00;
+}
+a:hover {
+  color: #f57c00;
+}
+a:active {
+  color: red;
 }
 </style>
