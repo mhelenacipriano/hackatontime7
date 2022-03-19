@@ -89,6 +89,7 @@ img {
 a:link {
   color: #f57c00;
   font-size: 16px;
+  text-decoration: none;
 }
 
 
