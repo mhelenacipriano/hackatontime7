@@ -1,6 +1,6 @@
 <template>
 
-  <v-container>
+  <v-container class="fundo">
     <h2 class="text-h5 text-center mb-3 mt-5">
       <strong>Serviços de Checagem de Fake News</strong>
       
@@ -97,4 +97,7 @@ a:hover {
   color: #D84315;
 }
 
+.fundo{
+  background-color: #FFF3E0;
+}
 </style>
