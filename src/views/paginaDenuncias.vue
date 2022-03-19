@@ -5,6 +5,7 @@
     </h2>
 
     <template>
+
   <v-form
     ref="form"
     v-model="valid"
@@ -26,8 +27,7 @@
     ></v-text-field>
 
         <v-text-field
-      v-model="email"
-      :rules="emailRules"
+      v-model="link"
       label="Link da Fake News"
       required
     ></v-text-field>
@@ -39,9 +39,13 @@
       color="success"
       class="mr-4"
       @click="validate"
+    
     >
       Denunciar
+ 
     </v-btn>
+
+    <p id="imprime"></p>
 
     <v-btn
       color="error"
@@ -50,8 +54,8 @@
     >
       Reset Form
     </v-btn>
-
     
+       
   </v-form>
 </template>
 
@@ -75,27 +79,37 @@ export default {
         v => !!v || 'E-mail is required',
         v => /.+@.+\..+/.test(v) || 'E-mail must be valid',
       ],
-      select: null,
-      items: [
-        'Item 1',
-        'Item 2',
-        'Item 3',
-        'Item 4',
-      ]
+    
+     
       
+     data () {
+    
+    
+  },  
+    
     }),
 
     methods: {
       validate () {
         this.$refs.form.validate()
+        this.$refs.form.reset()
+        this.printSubmissao();
       },
       reset () {
         this.$refs.form.reset()
       },
       
+      printSubmissao(){
+        var submissaoOk = "Sua denuncia foi recebida!";
+        document.getElementById("imprime").innerHTML = submissaoOk;
+      }
+      
+      
   
   }}
 </script>
+
+
 
 <style scoped>
 .home-image {

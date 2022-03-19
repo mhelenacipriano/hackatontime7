@@ -5,51 +5,74 @@
       Serviços de checagem de Fake News
     </h2>
 
-    <v-simple-table>
-      <template v-slot:default>
-        <thead>
-          <tr v-for="dados of newsLlista" :key="dados.id">
-            <th>
-              {{newsLlista.descricao}}             
-            </th>
-          </tr>
-        </thead>
+    <div class="editando-flex">
+      <v-simple-table>
+        <template v-slot:default>
+          <thead>
+            <tr v-for="dados of newsLlista" :key="dados.id">
 
-        <tbody>
-          <tr v-for="dados of newsLlista" :key="dados.id">
-            <td>
-              {{dados.nome}}  
-            </td>
-            <td>
-              (site)
-            </td>
-            <td>
-              (imagem)
-            </td>
-          </tr>
-        </tbody>
+            </tr>
+          </thead>
 
-      </template>
-    </v-simple-table>
+          <tbody>
+            <tr v-for="dados of newsLlista" :key="dados.id">
+              <th>
+                {{dados.nome}}             
+              </th>
+              <td>
+                {{dados.descricao}}  
+              </td>
+              <td>
+                {{dados.site}}
+              </td>
+              <td>
+                <v-img> 
+                    <img :src="dados.imagem">
+                </v-img>   
+              </td>
+            </tr>
+          </tbody>
+        </template>
+      </v-simple-table>
+    </div>
+
+    
   </v-container>  
 </template>
 
 <script>
     
 export default {
-  name: 'NewsLista',
-  data() {
-      return {
-        newsLlista: []
-      }
-    },
+    name: 'NewsLista',
+    data() {
+        return {
+          newsLlista: []
+        }
+      },
     created() {
       fetch('https://it3-hbn-default-rtdb.firebaseio.com/fakeNews.json')
           .then(resposta => resposta.json())
           .then(json => {
-            this.newsLlista = json;
-            console.log(this.newsLlista);
+            this.newsLlista = json;        
+            console.log(this.newsLlista)    
           });
-    }
-  }
+    },
+    computed: {
+    dadosListaOrdenada() {
+        const listaOrdenada = this.listaPaises.slice(0).sort(
+            (a, b) => a.pontos > b.pontos ? -1 : 1
+        )
+        return listaOrdenada
+      }
+    },
+}
 </script>
+
+
+<style scoped>
+.editando-flex{
+  display: flex;
+  align-content: center;
+  width: 100%;
+}
+</style>
