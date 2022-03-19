@@ -1,6 +1,6 @@
 <template>
   <div class="app-top-bar">
-    <v-app-bar color="green lighten-1" app dark>
+    <v-app-bar color="orange darken-2" app dark>
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
       <v-toolbar-title>True or false? </v-toolbar-title>
     </v-app-bar>
@@ -9,7 +9,7 @@
       <v-list nav dense>
         <v-list-item-group
           v-model="group"
-          active-class="green--text text--lighten-2"
+          active-class="orange darken-2"
         >
           <router-link to="/">
             <v-list-item>
@@ -20,12 +20,21 @@
             </v-list-item>
           </router-link>
 
-          <router-link to="/classificacao">
+          <router-link to="/">
             <v-list-item>
               <v-list-item-icon>
                 <v-icon>mdi-head-check-outline</v-icon>
               </v-list-item-icon>
-              <v-list-item-title>Noticias Verdadeiras</v-list-item-title>
+              <v-list-item-title> Notícias Verdadeiras</v-list-item-title>
+            </v-list-item>
+          </router-link>
+
+          <router-link to="/classificacao">
+            <v-list-item>
+              <v-list-item-icon>
+                <v-icon>mdi-head-remove-outline</v-icon>
+              </v-list-item-icon>
+              <v-list-item-title>Informe FakeNews</v-list-item-title>
             </v-list-item>
           </router-link>
         </v-list-item-group>
