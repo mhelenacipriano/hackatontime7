@@ -1,14 +1,15 @@
 <template>
-    
     <div> 
-    <app-fake/>
+       <v-container class="home">
+    <h2 class="text-h5 text-center mb-3 mt-5">
+      Aqui você pode confiar
+    </h2>
+  </v-container> 
     </div>
 </template>
 
 <script>
-import AppFake from '@/components/AppFake.vue'
 export default {
-  components: { AppFake },
     name: 'meuInicio',
 }
 </script>
