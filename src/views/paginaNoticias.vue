@@ -10,7 +10,7 @@
         <thead>
           <tr v-for="dados of newsLlista" :key="dados.id">
             <th>
-              {{newsLlista.descricao}}             
+              {{dados.nome}}             
             </th>
           </tr>
         </thead>
@@ -18,7 +18,7 @@
         <tbody>
           <tr v-for="dados of newsLlista" :key="dados.id">
             <td>
-              {{dados.nome}}  
+              {{dados.descricao}}  
             </td>
             <td>
               (site)
