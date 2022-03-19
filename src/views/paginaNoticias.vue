@@ -3,12 +3,12 @@
   <v-container class="fundo">
     <h2 class="text-h5 text-center mb-3 mt-5">
       <strong>Serviços de Checagem de Fake News</strong>
-      
+      <p class="text-subtitle-2">Nessa página você encontra várias ferramentas de Fact Checking para conferir a veracidade da notícia que você recebeu.</p>
     </h2>
 
     <div class="editando-flex">
       <v-simple-table class="orange lighten-4">
-        <template v-slot:default>
+         <template v-slot:default>
           <thead>
             <tr v-for="dados of newsLlista" :key="dados.id">
 
@@ -88,8 +88,6 @@ img {
 /* unvisited link */
 a:link {
   color: #f57c00;
-  font-size: 16px;
-  text-decoration: none;
 }
 
 
