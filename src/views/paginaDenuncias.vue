@@ -1,6 +1,6 @@
 <template>
   <v-container class="home">
-    <h2 class="text-h5 text-center mb-3 mt-5">
+    <h2 class="text-h5 text-left mb-3 mt-5">
       Recebeu alguma notícia falsa? Denuncie!
     </h2>
 
@@ -13,7 +13,7 @@
   >
     <v-text-field
       v-model="name"
-      :counter="10"
+      :counter="30"
       :rules="nameRules"
       label="Nome"
       required
