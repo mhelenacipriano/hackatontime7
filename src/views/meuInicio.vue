@@ -2,7 +2,7 @@
   <div>
     <v-container class="home">
       <h2 class="text-h5 text-center mb-3 mt-5">
-        <strong>Aqui você pode confiar</strong>
+        <strong>Você não deve acreditar em tudo que vê na internet!</strong>
       </h2>
       <v-img
         class="img-inicio text-center mb-4"
@@ -42,8 +42,11 @@ export default {
 .h4-decor {
   color: #f57c00;
 }
+a:visited {
+    color: #f57c00;
+}
 a:link {
-  color: f57c00;
+  color: #f57c00;
 }
 a:hover {
   color: #f57c00;
