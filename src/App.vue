@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app class="home">
     <AppFake />
     <v-main>
       <router-view />
@@ -17,3 +17,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.home{
+  background-color: #FFF3E0;
+}
+</style>

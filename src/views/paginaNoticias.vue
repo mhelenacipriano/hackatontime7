@@ -7,7 +7,7 @@
     </h2>
 
     <div class="editando-flex">
-      <v-simple-table>
+      <v-simple-table class="orange lighten-4">
         <template v-slot:default>
           <thead>
             <tr v-for="dados of newsLlista" :key="dados.id">
@@ -20,7 +20,9 @@
               <th>
                 <v-img> 
                     <img :src="dados.imagem">
-                </v-img>   
+                    
+                </v-img> 
+              
                 <a :href=dados.site class="text-uppercase">{{dados.nome}} </a>       
               </th>
               <td>
@@ -87,6 +89,7 @@ img {
 a:link {
   color: #f57c00;
 }
+
 
 a:hover {
   color: #D84315;
