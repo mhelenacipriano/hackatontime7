@@ -7,17 +7,17 @@
     <v-simple-table>
       
     </v-simple-table>
-  </v-container>
+  </v-container>  
 </template>
 
 <script>
-  import HelloWorld from '../components/HelloWorld'
+import AppFake from '@/components/AppFake.vue'
+
 
   export default {
-    name: 'HomeView',
+  components: { AppFake },
+    name: 'paginaNoticias',
 
-    components: {
-      HelloWorld,
-    },
+    
   }
 </script>
