@@ -1,4 +1,4 @@
-<template>
+<template class = "fundo">
   <v-container class="home">
     <h2 class="text-h6 text-left mb-3 mt-5">
       Recebeu alguma notícia falsa? Denuncie!
@@ -114,5 +114,8 @@ export default {
 <style scoped>
 .home-image {
   border-radius: 3px;
+}
+.fundo{
+  background-color: #FFF3E0;
 }
 </style>
