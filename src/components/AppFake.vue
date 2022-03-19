@@ -25,7 +25,7 @@
               <v-list-item-icon>
                 <v-icon>mdi-head-check-outline</v-icon>
               </v-list-item-icon>
-              <v-list-item-title> Notícias Verdadeiras</v-list-item-title>
+              <v-list-item-title> Cheque os fatos</v-list-item-title>
             </v-list-item>
           </router-link>
 
