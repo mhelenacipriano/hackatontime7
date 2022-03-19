@@ -20,7 +20,7 @@
             </v-list-item>
           </router-link>
 
-          <router-link to="/">
+          <router-link to="/paginaNoticias">
             <v-list-item>
               <v-list-item-icon>
                 <v-icon>mdi-head-check-outline</v-icon>
@@ -29,7 +29,7 @@
             </v-list-item>
           </router-link>
 
-          <router-link to="/classificacao">
+          <router-link to="/paginaDenuncias">
             <v-list-item>
               <v-list-item-icon>
                 <v-icon>mdi-head-remove-outline</v-icon>
