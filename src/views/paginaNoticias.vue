@@ -23,7 +23,7 @@
                     
                 </v-img> 
               
-                <a :href=dados.site class="text-uppercase">{{dados.nome}} </a>       
+                <a :href=dados.site class="text-uppercase h3">{{dados.nome}} </a>       
               </th>
               <td>
                 {{dados.descricao}}  
