@@ -2,7 +2,7 @@
   <div class="app-top-bar">
     <v-app-bar color="orange darken-2" app dark>
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
-      <v-toolbar-title>True or false? </v-toolbar-title>
+      <v-toolbar-title>True or False? </v-toolbar-title>
     </v-app-bar>
 
     <v-navigation-drawer v-model="drawer" absolute temporary>
