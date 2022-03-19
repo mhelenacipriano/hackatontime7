@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="fundo">
     <v-container class="home">
       <h2 class="text-h5 text-center mb-3 mt-5">
         <strong>Você não deve acreditar em tudo que vê na internet!</strong>
@@ -10,7 +10,7 @@
       >
       </v-img>
       <p class="p-style text-justify" >
-        No aplicativo 'True or False' você contará com o serviço de
+        No aplicativo <b>True or False</b> você contará com o serviço de
         monitoramento e checagem de conteúdos duvidosos que esclarece o que é
         falso ou verdadeiro em mensagens disseminadas pelo celular e pela
         internet.
@@ -53,5 +53,8 @@ a:hover {
 }
 a:active {
   color: red;
+}
+.fundo{
+  background-color: #FFF3E0;
 }
 </style>
