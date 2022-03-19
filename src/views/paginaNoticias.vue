@@ -10,7 +10,7 @@
         <thead>
           <tr>
             <th>
-              (Nome) G1 - Fato ou Fake
+              {{newsLlista.descricao}}             
             </th>
           </tr>
         </thead>
@@ -21,10 +21,10 @@
               (Descrição)
             </td>
             <td>
-              link
+              (site)
             </td>
             <td>
-              link
+              (imagem)
             </td>
           </tr>
         </tbody>
@@ -35,16 +35,12 @@
 </template>
 
 <script>
-  export default {
-    name: 'paginaNoticias',
-
     
 export default {
   name: 'NewsLista',
   data() {
       return {
-        newsLlista: [
-        ]
+        newsLlista: []
       }
     },
     created() {
