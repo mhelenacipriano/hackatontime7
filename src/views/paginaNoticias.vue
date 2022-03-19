@@ -6,9 +6,9 @@
     </h2>
 
     <v-simple-table>
-      <template>
+      <template v-slot:default>
         <thead>
-          <tr>
+          <tr v-for="dados of newsLlista" :key="dados.id">
             <th>
               {{newsLlista.descricao}}             
             </th>
@@ -16,9 +16,9 @@
         </thead>
 
         <tbody>
-          <tr>
+          <tr v-for="dados of newsLlista" :key="dados.id">
             <td>
-              (Descrição)
+              {{dados.nome}}  
             </td>
             <td>
               (site)
