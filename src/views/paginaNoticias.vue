@@ -10,7 +10,7 @@
         <thead>
           <tr v-for="dados of newsLlista" :key="dados.id">
             <th>
-              {{dados.nome}}             
+              {{newsLlista.descricao}}             
             </th>
           </tr>
         </thead>
@@ -18,7 +18,7 @@
         <tbody>
           <tr v-for="dados of newsLlista" :key="dados.id">
             <td>
-              {{dados.descricao}}  
+              {{dados.nome}}  
             </td>
             <td>
               (site)
@@ -43,13 +43,22 @@ export default {
         newsLlista: []
       }
     },
+    
     created() {
       fetch('https://it3-hbn-default-rtdb.firebaseio.com/fakeNews.json')
           .then(resposta => resposta.json())
           .then(json => {
             this.newsLlista = json;
-            console.log(this.newsLlista);
           });
+    },
+    computed: {
+    clubesOrdenados() {
+      const computado = this.newsLlista.slice(0).sort(
+        (a, b) =>  a.pontos > b.pontos ? -1 : 1
+      );
+      return computado;
     }
+  }
+    
   }
 </script>
