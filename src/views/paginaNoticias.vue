@@ -2,7 +2,8 @@
 
   <v-container>
     <h2 class="text-h5 text-center mb-3 mt-5">
-      Serviços de Checagem de Fake News
+      <strong>Serviços de Checagem de Fake News</strong>
+      
     </h2>
 
     <div class="editando-flex">
