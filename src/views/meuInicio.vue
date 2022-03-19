@@ -10,10 +10,10 @@
       >
       </v-img>
       <p class="p-style text-justify" >
-        No aplicativo <b>True or False</b> você contará com o serviço de
-        monitoramento e checagem de conteúdos duvidosos que esclarece o que é
-        falso ou verdadeiro em mensagens disseminadas pelo celular e pela
-        internet.
+        No aplicativo <b>True or False</b> você encontrará tanto portais de notícia confiáveis como serviços de
+        checagem de fake news. Verifique o que é
+        verdade e o que é mentira nas mensagens disseminadas pelo celular e pela
+        internet. Fuja da desinformação!
       </p>
 
       <h4 class="h4-decor">
