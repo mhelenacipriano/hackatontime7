@@ -1,24 +1,9 @@
 # hackathon-decola-vue
 
-## Project setup
-```
-npm install
-```
+## Hackathon Decola - Time 7
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+True or false?
+Tema abordado: Fake News
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+A aplicação auxilia aos usuários que buscam por notícias confiáveis, e que possam acessar diferentes ferramentas de confirmação das notícias consumidas, a fim de avaliar sua veracidade.
+No caso de localizar uma notícia falsa, a aplicação também permite que seja feita a denúncia da mesma e corrobore para a redução das Fake News.
