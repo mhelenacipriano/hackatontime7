@@ -52,7 +52,7 @@
       class="mr-4"
       @click="reset"
     >
-      Reset Form
+      Limpar
     </v-btn>
     
        
