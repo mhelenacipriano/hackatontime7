@@ -1,13 +1,13 @@
 <template>
-  <app-fake />
+<div>
+</div>
 </template>
 
 <script>
-import AppFake from '@/components/AppFake.vue'
+
 
 
   export default {
-  components: { AppFake },
     name: 'paginaNoticias',
 
     
