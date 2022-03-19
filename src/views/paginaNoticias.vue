@@ -2,7 +2,7 @@
 
   <v-container>
     <h2 class="text-h5 text-center mb-3 mt-5">
-      Serviços de checagem de Fake News
+      Serviços de Checagem de Fake News
     </h2>
 
     <div class="editando-flex">
@@ -17,7 +17,10 @@
           <tbody>
             <tr v-for="dados of newsLlista" :key="dados.id">
               <th>
-                <a :href=dados.site>{{dados.nome}} </a>       
+                <v-img> 
+                    <img :src="dados.imagem">
+                </v-img>   
+                <a :href=dados.site class="text-uppercase">{{dados.nome}} </a>       
               </th>
               <td>
                 {{dados.descricao}}  
@@ -26,9 +29,7 @@
                 
               </td>
               <td>
-                <v-img> 
-                    <img :src="dados.imagem">
-                </v-img>   
+                
               </td>
             </tr>
           </tbody>
@@ -76,8 +77,18 @@ export default {
   align-content: center;
   width: 100%;
   height: 25%;
+  text-align: justify;
 }
 img { 
   width: 10vh;
 }
+/* unvisited link */
+a:link {
+  color: #f57c00;
+}
+
+a:hover {
+  color: #D84315;
+}
+
 </style>
